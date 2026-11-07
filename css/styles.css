@@ -53,11 +53,6 @@
   border: 0 solid transparent;
 }
 
-/* FIX: Asegura que el atributo hidden siempre oculte el elemento */
-[hidden] {
-  display: none !important;
-}
-
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
@@ -1008,12 +1003,6 @@ ol {
   flex-wrap: wrap;
   gap: 12px 24px;
   margin-top: 12px;
-  align-items: center; /* Asegura que el botón quede alineado con los links */
-}
-.footer-cta {
-  min-height: 32px;
-  padding: 0 12px;
-  font-size: 14px;
 }
 
 /* CASE STUDY PAGE ---------------------------------------------------------- */
@@ -1101,4 +1090,13 @@ ol {
 }
 .not-found-code {
   color: var(--text-2);
+}
+
+/* NUEVO: Estilo para la imagen opcional del 404 */
+.not-found-img {
+  max-width: 240px;
+  width: 100%;
+  height: auto;
+  margin-block: 8px;
+  border-radius: 8px;
 }

@@ -1065,6 +1065,17 @@ ol {
   margin-top: auto;
 }
 
+/* NUEVO: Estilo para las imágenes del caso de estudio */
+.case-img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid var(--sep);
+  margin-top: auto; /* Empuja la imagen hacia el fondo de la tarjeta */
+  background-color: var(--bg); /* Fondo por si la imagen no carga */
+  object-fit: cover;
+}
+
 /* 404 ---------------------------------------------------------------------- */
 .not-found {
   min-height: 100vh;

@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Nombre Apellido — Portfolio UX/UI</title>
+  <meta name="description" content="Portfolio personal de diseño UX/UI: proyectos académicos, habilidades, formación y contacto. Estudiante de Sistemas de Información." />
+  <meta name="theme-color" content="#111521" />
+  <meta name="author" content="Nombre Apellido" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nombre Apellido — Portfolio UX/UI" />
+  <meta property="og:description" content="Portfolio personal de diseño UX/UI: proyectos académicos, habilidades, formación y contacto." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/og-image.png" />
+  <meta property="og:locale" content="es_AR" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nombre Apellido — Portfolio UX/UI" />
+  <meta name="twitter:description" content="Portfolio personal de diseño UX/UI." />
+
+  <!-- Favicon (SVG inline) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23171b2b'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' fill='%23f5f6fa' text-anchor='middle'%3ENN%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fuentes: 2 familias (Encode Sans + Graduate) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400..700&family=Graduate&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Saltar al contenido (accesibilidad) -->
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#inicio" class="logo" aria-label="Ir al inicio">
+        <span class="logo-mark" aria-hidden="true">NN</span>
+        <span class="logo-text">
+          <span class="logo-name">Nombre · ejemplo</span>
+          <span class="logo-role">Diseño y desarrollo · ejemplo</span>
+        </span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Principal">
+        <a href="#inicio" class="navlink" data-section="inicio">Inicio</a>
+        <a href="#logros" class="navlink" data-section="logros">Logros</a>
+        <a href="#habilidades" class="navlink" data-section="habilidades">Habilidades</a>
+        <a href="#proyectos" class="navlink" data-section="proyectos">Proyectos</a>
+        <a href="#formacion" class="navlink" data-section="formacion">Formación</a>
+        <a href="#sobre-mi" class="navlink" data-section="sobre-mi">Sobre mí</a>
+
+        <a href="#contacto" class="btn btn-primary">Contactarme</a>
+        <a
+          href="https://github.com/"
+          class="lnk"
+          target="_blank"
+          rel="noopener noreferrer"
+        >GitHub →</a>
+        <button
+          type="button"
+          class="btn btn-secondary theme-toggle"
+          data-theme-toggle
+          aria-label="Cambiar a modo oscuro"
+        >
+          <span aria-hidden="true" data-theme-icon>☼</span>
+          <span data-theme-label>Claro</span>
+        </button>
+      </nav>
+
+      <button
+        type="button"
+        class="btn btn-secondary menu-toggle"
+        aria-expanded="false"
+        aria-controls="menu-movil"
+        aria-label="Abrir menú"
+        data-menu-toggle
+      >
+        <span aria-hidden="true" data-menu-icon>☰</span>
+      </button>
+    </div>
+
+    <!-- Menú móvil -->
+    <div id="menu-movil" class="mobile-menu" hidden>
+      <nav aria-label="Menú móvil" class="wrap">
+        <ul class="mobile-list">
+          <li><a href="#inicio" data-section="inicio">Inicio <span aria-hidden="true">→</span></a></li>
+          <li><a href="#logros" data-section="logros">Logros <span aria-hidden="true">→</span></a></li>
+          <li><a href="#habilidades" data-section="habilidades">Habilidades <span aria-hidden="true">→</span></a></li>
+          <li><a href="#proyectos" data-section="proyectos">Proyectos <span aria-hidden="true">→</span></a></li>
+          <li><a href="#formacion" data-section="formacion">Formación <span aria-hidden="true">→</span></a></li>
+          <li><a href="#sobre-mi" data-section="sobre-mi">Sobre mí <span aria-hidden="true">→</span></a></li>
+          <li class="mobile-cta">
+            <a href="#contacto" class="btn btn-primary">Contactarme <span aria-hidden="true">→</span></a>
+          </li>
+        </ul>
+        <div class="mobile-extras">
+          <button
+            type="button"
+            class="btn btn-secondary theme-toggle"
+            data-theme-toggle
+            aria-label="Cambiar a modo oscuro"
+          >
+            <span aria-hidden="true" data-theme-icon>☼</span>
+            <span data-theme-label>Claro</span>
+          </button>
+          <a
+            href="https://github.com/"
+            class="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub →</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main id="contenido">
+
+    <!-- HERO / INICIO -->
+    <section id="inicio" aria-labelledby="titulo-inicio" class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-main">
+          <p class="t-meta">Inicio</p>
+          <h1 id="titulo-inicio" class="t-h1">Nombre Apellido</h1>
+          <p class="hero-role">Diseño y desarrollo · ejemplo</p>
+
+          <div class="card hero-value">
+            <p class="t-meta">Propuesta de valor</p>
+            <p class="t-lead">
+              Un proceso claro, un resultado útil. Diseño interfaces comprensibles
+              y las llevo a código con criterio.
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <div class="hero-mini">
+            <div class="card">
+              <p class="t-meta">Disponibilidad</p>
+              <span class="tag tag-ok">
+                <span class="dot" aria-hidden="true"></span>
+                Disponible · ejemplo
+              </span>
+            </div>
+            <div class="card">
+              <p class="t-meta">Zona horaria</p>
+              <p class="strong">UTC−3 · ejemplo</p>
+            </div>
+          </div>
+          <div class="hero-ctas">
+            <a href="#proyectos" class="btn btn-secondary">Ver trabajos <span aria-hidden="true">→</span></a>
+            <a href="#contacto" class="btn btn-primary">Contactarme <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGROS -->
+    <section id="logros" aria-labelledby="logros-titulo" class="section">
+      <div class="wrap">
+        <div class="section-title">
+          <h2 id="logros-titulo" class="t-h2">Logros</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+        </div>
+        <ul class="grid-3">
+          <li class="card logro-card">
+            <span class="logro-value" aria-label="Valor pendiente">—</span>
+            <h3 class="t-h3">Herramientas · ejemplo</h3>
+            <p class="t-small muted">EJEMPLO · Completar con datos verificables.</p>
+          </li>
+          <li class="card logro-card">
+            <span class="logro-value" aria-label="Valor pendiente">—</span>
+            <h3 class="t-h3">Años de estudio · ejemplo</h3>
+            <p class="t-small muted">EJEMPLO · Completar con datos verificables.</p>
+          </li>
+          <li class="card logro-card">
+            <span class="logro-value" aria-label="Valor pendiente">—</span>
+            <h3 class="t-h3">Cursos · ejemplo</h3>
+            <p class="t-small muted">EJEMPLO · Completar con datos verificables.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" aria-labelledby="habilidades-titulo" class="section">
+      <div class="wrap">
+        <div class="section-title">
+          <h2 id="habilidades-titulo" class="t-h2">Habilidades</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+        </div>
+        <ul class="grid-3">
+          <li class="card card-hover skill-card">
+            <p class="t-meta">Habilidad / ejemplo</p>
+            <h3 class="t-h3">Diseño UX</h3>
+            <p class="muted">Explorar necesidades y ordenar recorridos. Descripción demostrativa de una habilidad.</p>
+            <ul class="tag-row" aria-label="Herramientas de Diseño UX">
+              <li><span class="tag">Figma</span></li>
+              <li><span class="tag">FigJam</span></li>
+            </ul>
+          </li>
+          <li class="card card-hover skill-card">
+            <p class="t-meta">Habilidad / ejemplo</p>
+            <h3 class="t-h3">Front-end</h3>
+            <p class="muted">Construir interfaces claras, adaptables y semánticas. Contenido de ejemplo.</p>
+            <ul class="tag-row" aria-label="Herramientas de Front-end">
+              <li><span class="tag">HTML</span></li>
+              <li><span class="tag">CSS</span></li>
+              <li><span class="tag">JavaScript</span></li>
+            </ul>
+          </li>
+          <li class="card card-hover skill-card">
+            <p class="t-meta">Habilidad / ejemplo</p>
+            <h3 class="t-h3">Herramientas</h3>
+            <p class="muted">Registrar decisiones y colaborar con un proceso documentado. Contenido de ejemplo.</p>
+            <ul class="tag-row" aria-label="Herramientas de trabajo">
+              <li><span class="tag">Git</span></li>
+              <li><span class="tag">GitHub</span></li>
+              <li><span class="tag">VS Code</span></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" aria-labelledby="proyectos-titulo" class="section">
+      <div class="wrap">
+        <div class="section-title">
+          <h2 id="proyectos-titulo" class="t-h2">Proyectos</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+        </div>
+        <ul class="grid-3">
+          <!-- Proyecto 1 (con caso de estudio interno) -->
+          <li class="card card-hover project-card">
+            <p class="t-meta">2026 · Proyecto académico · Ejemplo</p>
+            <div class="placeholder-surface project-thumb" role="img" aria-label="Miniatura de ejemplo del proyecto Biblioteca de recursos">
+              <span class="strong">Proyecto de ejemplo</span>
+              <span class="t-small">Reemplazar por captura del proyecto</span>
+            </div>
+            <article class="project-body">
+              <h3 class="t-h3">Biblioteca de recursos</h3>
+              <p class="muted">Propuesta de ejemplo para organizar materiales de estudio y encontrarlos con menos pasos.</p>
+              <div>
+                <p class="t-meta">Aprendizaje / resultado de muestra</p>
+                <p>Jerarquizar la búsqueda y documentar las decisiones del prototipo.</p>
+              </div>
+              <ul class="tag-row" aria-label="Herramientas usadas">
+                <li><span class="tag">Figma</span></li>
+                <li><span class="tag">HTML / CSS</span></li>
+              </ul>
+              <a href="proyecto-biblioteca-de-recursos.html" class="lnk project-link">
+                Ver caso de estudio <span aria-hidden="true">→</span>
+                <span class="sr-only">de Biblioteca de recursos</span>
+              </a>
+            </article>
+          </li>
+
+          <!-- Proyecto 2 -->
+          <li class="card card-hover project-card">
+            <p class="t-meta">2026 · Proyecto académico · Ejemplo</p>
+            <div class="placeholder-surface project-thumb" role="img" aria-label="Miniatura de ejemplo del proyecto Guía de cursada">
+              <span class="strong">Proyecto de ejemplo</span>
+              <span class="t-small">Reemplazar por captura del proyecto</span>
+            </div>
+            <article class="project-body">
+              <h3 class="t-h3">Guía de cursada</h3>
+              <p class="muted">Propuesta de ejemplo para seguir fechas y entregas de una cursada en un solo lugar.</p>
+              <div>
+                <p class="t-meta">Aprendizaje / resultado de muestra</p>
+                <p>Priorizar la información que se consulta con más frecuencia.</p>
+              </div>
+              <ul class="tag-row" aria-label="Herramientas usadas">
+                <li><span class="tag">FigJam</span></li>
+                <li><span class="tag">Git</span></li>
+              </ul>
+              <a href="https://github.com/" class="lnk project-link" target="_blank" rel="noopener noreferrer">
+                Ver repositorio <span aria-hidden="true">↗</span>
+                <span class="sr-only">de Guía de cursada</span>
+              </a>
+            </article>
+          </li>
+
+          <!-- Proyecto 3 -->
+          <li class="card card-hover project-card">
+            <p class="t-meta">2026 · Proyecto académico · Ejemplo</p>
+            <div class="placeholder-surface project-thumb" role="img" aria-label="Miniatura de ejemplo del proyecto Agenda de estudio">
+              <span class="strong">Proyecto de ejemplo</span>
+              <span class="t-small">Reemplazar por captura del proyecto</span>
+            </div>
+            <article class="project-body">
+              <h3 class="t-h3">Agenda de estudio</h3>
+              <p class="muted">Propuesta de ejemplo para planificar sesiones de estudio y revisar el progreso.</p>
+              <div>
+                <p class="t-meta">Aprendizaje / resultado de muestra</p>
+                <p>Validar flujos con pruebas rápidas antes de maquetar.</p>
+              </div>
+              <ul class="tag-row" aria-label="Herramientas usadas">
+                <li><span class="tag">Figma</span></li>
+                <li><span class="tag">JavaScript</span></li>
+              </ul>
+              <a href="https://github.com/" class="lnk project-link" target="_blank" rel="noopener noreferrer">
+                Ver repositorio <span aria-hidden="true">↗</span>
+                <span class="sr-only">de Agenda de estudio</span>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FORMACIÓN -->
+    <section id="formacion" aria-labelledby="formacion-titulo" class="section">
+      <div class="wrap">
+        <div class="section-title">
+          <h2 id="formacion-titulo" class="t-h2">Formación</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+        </div>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="card">
+              <p class="t-meta timeline-period-mobile">20XX–20XX</p>
+              <h3 class="t-h3">Institución de ejemplo</h3>
+              <p class="strong muted">Estudiante · programa de muestra</p>
+              <ul class="timeline-bullets">
+                <li>• Proyecto grupal de ejemplo.</li>
+                <li>• Presentación final de muestra.</li>
+              </ul>
+            </div>
+            <p class="t-meta timeline-period-desktop">20XX–20XX</p>
+          </li>
+          <li class="timeline-item">
+            <div class="card">
+              <p class="t-meta timeline-period-mobile">20XX–20XX</p>
+              <h3 class="t-h3">Institución de ejemplo</h3>
+              <p class="strong muted">Estudiante · programa de muestra</p>
+              <ul class="timeline-bullets">
+                <li>• Proyecto grupal de ejemplo.</li>
+                <li>• Presentación final de muestra.</li>
+              </ul>
+            </div>
+            <p class="t-meta timeline-period-desktop">20XX–20XX</p>
+          </li>
+          <li class="timeline-item">
+            <div class="card">
+              <p class="t-meta timeline-period-mobile">20XX–20XX</p>
+              <h3 class="t-h3">Institución de ejemplo</h3>
+              <p class="strong muted">Estudiante · programa de muestra</p>
+              <ul class="timeline-bullets">
+                <li>• Proyecto grupal de ejemplo.</li>
+                <li>• Presentación final de muestra.</li>
+              </ul>
+            </div>
+            <p class="t-meta timeline-period-desktop">20XX–20XX</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" aria-labelledby="sobre-mi-titulo" class="section">
+      <div class="wrap">
+        <div class="section-title">
+          <h2 id="sobre-mi-titulo" class="t-h2">Sobre mí</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+        </div>
+        <div class="about-grid">
+          <div class="placeholder-surface about-portrait" role="img" aria-label="Ilustración de ejemplo: retrato de la persona, reemplazar por foto real">
+            <span class="about-portrait-mark">NN</span>
+            <span class="t-small">Retrato de ejemplo</span>
+          </div>
+          <div class="card about-text">
+            <p class="t-meta">Presentación</p>
+            <p class="t-lead">
+              Soy estudiante de Sistemas de Información y me interesa diseñar
+              productos digitales claros, accesibles y bien construidos.
+            </p>
+            <p class="muted">
+              Texto de ejemplo: reemplazar por una presentación personal con información verificable.
+            </p>
+          </div>
+        </div>
+        <ul class="grid-3 about-principles">
+          <li class="card card-hover principle-card">
+            <h3 class="t-h3">Claridad</h3>
+            <p class="muted">Hacer que la información y las decisiones sean fáciles de comprender.</p>
+            <p class="t-meta principle-note">Valor de ejemplo</p>
+          </li>
+          <li class="card card-hover principle-card">
+            <h3 class="t-h3">Curiosidad</h3>
+            <p class="muted">Explorar alternativas y formular preguntas antes de elegir una solución.</p>
+            <p class="t-meta principle-note">Valor de ejemplo</p>
+          </li>
+          <li class="card card-hover principle-card">
+            <h3 class="t-h3">Colaboración</h3>
+            <p class="muted">Compartir el proceso y documentar lo aprendido para trabajar mejor en equipo.</p>
+            <p class="t-meta principle-note">Valor de ejemplo</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" aria-labelledby="contacto-titulo" class="section">
+      <div class="wrap">
+        <div class="section-title">
+          <h2 id="contacto-titulo" class="t-h2">Contacto</h2>
+          <p class="section-lead">Contame sobre tu idea o consulta.</p>
+          <span class="section-rule" aria-hidden="true"></span>
+        </div>
+        <p class="t-meta contact-overline">¿Hablamos?</p>
+
+        <div class="contact-grid">
+          <form
+            class="card contact-form"
+            aria-label="Formulario de contacto"
+            novalidate
+            data-contact-form
+          >
+            <div class="form-row">
+              <div class="field-group">
+                <label for="nombre" class="field-label">Nombre <span aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  class="field"
+                  autocomplete="name"
+                  placeholder="Tu nombre"
+                  required
+                />
+                <p class="field-error" id="nombre-error" hidden></p>
+              </div>
+              <div class="field-group">
+                <label for="email" class="field-label">Email <span aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="field"
+                  autocomplete="email"
+                  placeholder="nombre@correo.com"
+                  required
+                />
+                <p class="field-error" id="email-error" hidden></p>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="mensaje" class="field-label">Mensaje <span aria-hidden="true">*</span></label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                class="field"
+                rows="5"
+                placeholder="Contame sobre tu consulta"
+                required
+              ></textarea>
+              <p class="field-error" id="mensaje-error" hidden></p>
+            </div>
+
+            <p class="t-small muted">
+              * Todos los campos son obligatorios. El email se usa sólo para responder tu consulta.
+            </p>
+
+            <div class="form-footer">
+              <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+              <div class="form-status" role="status" aria-live="polite" data-form-status></div>
+            </div>
+          </form>
+
+          <aside class="card contact-aside" aria-labelledby="otras-formas">
+            <h3 id="otras-formas" class="t-h3">Otras formas de conversar</h3>
+            <a href="mailto:ejemplo@correo.com" class="btn btn-secondary">Email <span aria-hidden="true">→</span></a>
+            <a href="https://www.linkedin.com/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">→</span></a>
+            <a href="https://github.com/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">→</span></a>
+            <p class="t-small muted">Canales de ejemplo. Sin direcciones ni enlaces configurados.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="strong">©2026 · Portfolio de ejemplo</p>
+        <p class="t-small muted">Hecho con HTML, CSS y JavaScript</p>
+      </div>
+      <nav aria-label="Redes sociales">
+        <p class="t-meta">Redes sociales</p>
+        <ul class="footer-links">
+          <li><a href="mailto:ejemplo@correo.com" class="lnk">Email →</a></li>
+          <li><a href="https://github.com/" class="lnk" target="_blank" rel="noopener noreferrer">GitHub →</a></li>
+          <li><a href="https://www.linkedin.com/" class="lnk" target="_blank" rel="noopener noreferrer">LinkedIn →</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Pie de página">
+        <p class="t-meta">Volver a</p>
+        <ul class="footer-links">
+          <li><a href="#inicio" class="lnk">Inicio</a></li>
+          <li><a href="#logros" class="lnk">Logros</a></li>
+          <li><a href="#habilidades" class="lnk">Habilidades</a></li>
+          <li><a href="#proyectos" class="lnk">Proyectos</a></li>
+          <li><a href="#formacion" class="lnk">Formación</a></li>
+          <li><a href="#sobre-mi" class="lnk">Sobre mí</a></li>
+          <li><a href="#contacto" class="lnk">Contactarme</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

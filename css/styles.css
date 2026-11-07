@@ -717,9 +717,21 @@ ol {
   position: relative;
 }
 
+/* Actualizado: Se quitó el padding y el borde punteado para que la imagen ocupe todo el espacio */
 .project-thumb {
   aspect-ratio: 16 / 10;
-  padding: 16px;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden; /* Para que la imagen respete el border-radius de la tarjeta */
+  background-color: var(--bg);
+}
+
+/* NUEVO: Clase para las imágenes de los proyectos */
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .project-body {

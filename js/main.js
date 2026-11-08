@@ -166,9 +166,11 @@
       });
     });
 
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
       let firstInvalid = null;
+      
+      // 1. Validar campos
       fields.forEach((name) => {
         const input = form.elements.namedItem(name);
         if (!input) return;
@@ -188,15 +190,53 @@
         return;
       }
 
-      // Demo: no envía a backend
-      form.querySelectorAll("input, textarea, button").forEach((el) => {
-        el.setAttribute("readonly", "true");
-        el.setAttribute("disabled", "true");
-      });
+      // 2. Enviar datos a Formspree
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.textContent;
+      
+      // Estado de carga
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Enviando...";
 
-      if (statusBox) {
-        statusBox.innerHTML =
-          '<p class="alert alert-ok"><span aria-hidden="true">✓</span> Enviado. Tu mensaje se recibió.</p>';
+      try {
+        const formData = new FormData(form);
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: {
+            'Accept': 'application/json' // Requerido por Formspree para devolver JSON
+          }
+        });
+
+        if (response.ok) {
+          // Éxito
+          if (statusBox) {
+            statusBox.innerHTML =
+              '<p class="alert alert-ok"><span aria-hidden="true">✓</span> Enviado. Tu mensaje se recibió.</p>';
+          }
+          form.reset(); // Limpia los campos
+          
+          // Remover bordes rojos de error si quedaron
+          fields.forEach((name) => {
+            const input = form.elements.namedItem(name);
+            if (input) {
+              input.removeAttribute("aria-invalid");
+              input.removeAttribute("aria-describedby");
+            }
+          });
+        } else {
+          throw new Error("Error en el servidor");
+        }
+      } catch (error) {
+        // Error de red o de Formspree
+        if (statusBox) {
+          statusBox.innerHTML =
+            '<p class="alert alert-err"><span aria-hidden="true">!</span> Hubo un problema al enviar. Por favor, intentá de nuevo o escribime por email.</p>';
+        }
+      } finally {
+        // Restaurar botón
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalBtnText;
       }
     });
   }

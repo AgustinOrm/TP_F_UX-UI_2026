@@ -25,8 +25,6 @@ Portfolio personal estático desarrollado como trabajo final de **Diseño UX/UI*
 
 ## ⚡ Performance y Lighthouse
 
-## ⚡ Performance y Lighthouse
-
 Se realizaron pruebas de rendimiento, accesibilidad y SEO utilizando PageSpeed Insights (Lighthouse) en modo Mobile y Desktop, obteniendo un puntaje de 100/100 en todas las métricas principales gracias a la optimización de imágenes y la ausencia de librerías pesadas.
 
 **Captura Mobile:**

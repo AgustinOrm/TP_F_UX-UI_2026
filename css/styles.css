@@ -53,6 +53,11 @@
   border: 0 solid transparent;
 }
 
+/* FIX: Asegura que el atributo hidden siempre oculte el elemento, sin importar el display */
+[hidden] {
+  display: none !important;
+}
+
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;

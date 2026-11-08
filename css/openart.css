@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Estilos exclusivos del Caso de Estudio (OpenArt)
+   ========================================================================== */
+
+.case-page { padding-block: 48px; }
+@media (min-width: 768px) { .case-page { padding-block: 64px; } }
+@media (min-width: 1200px) { .case-page { padding-block: 96px; } }
+
+.case-back { margin-bottom: 32px; }
+
+.case-header { margin-bottom: 32px; }
+@media (min-width: 1200px) { .case-header { margin-bottom: 48px; } }
+
+.case-steps { display: grid; gap: 16px; }
+@media (min-width: 768px) { .case-steps { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1200px) { .case-steps { gap: 24px; } }
+
+.case-step { display: flex; flex-direction: column; gap: 16px; height: 100%; }
+.case-step-head { display: flex; align-items: baseline; gap: 12px; }
+
+.case-img {
+  width: 100%; height: auto;
+  border-radius: 4px; border: 1px solid var(--sep);
+  margin-top: auto; background-color: var(--bg);
+  object-fit: cover;
+}

@@ -23,6 +23,33 @@ Portfolio personal estático desarrollado como trabajo final de **Diseño UX/UI*
 
 *Sin React, Vue, Next.js, Wix, Webflow ni constructores visuales.*
 
+## ⚡ Performance y Lighthouse
+
+Se realizaron pruebas de rendimiento, accesibilidad y SEO utilizando PageSpeed Insights (Lighthouse) en modo Mobile y Desktop, obteniendo un puntaje de 100/100 en todas las métricas principales gracias a la optimización de imágenes a formato `.avif` y la ausencia de librerías pesadas.
+
+- Captura Mobile: `assets/lighthouse_mobile.avif`
+- Captura Desktop: `assets/lighthouse_desktop.avif`
+
+## 📸 Comparación Figma vs. Sitio Desplegado
+
+Fidelidad de implementación entre el diseño prototipado y el código final:
+
+| Sección | Figma (Prototipo) | Sitio Desplegado (HTML/CSS) |
+| :--- | :--- | :--- |
+| **Inicio** | `assets/inicio_proto.avif` | `assets/inicio_desplegado.avif` |
+| **Contacto** | `assets/contacto_proto.avif` | `assets/contacto_desplegado.avif` |
+
+## 🤖 Uso de IA
+
+Este proyecto fue desarrollado con asistencia de Inteligencia Artificial para:
+
+- Traducción del prototipo de Figma a HTML y CSS puro.
+- Refactorización del CSS en múltiples archivos para mantener el código limpio.
+- Implementación de la lógica de validación en JavaScript y la integración con la API de Formspree.
+- Redacción y estructuración de la documentación.
+
+Todo el código generado fue revisado, testeado y ajustado manualmente por el alumno para asegurar que cumpla con los estándares de accesibilidad, responsive design y las consignas específicas del trabajo práctico.
+
 ## 📁 Estructura del Proyecto
 
 ```text
@@ -39,3 +66,9 @@ Portfolio personal estático desarrollado como trabajo final de **Diseño UX/UI*
 │   └── main.js                 # Lógica de interacciones y validación
 ├── assets/                     # Imágenes optimizadas (.avif) y capturas
 └── README.md
+
+## 📄 Créditos
+
+- Tipografías: [Google Fonts](https://fonts.google.com/) (Encode Sans y Graduate).
+- Procesamiento de formulario: [Formspree](https://formspree.io/).
+- Imágenes optimizadas con [Squoosh](https://squoosh.app/).

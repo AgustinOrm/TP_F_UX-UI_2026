@@ -25,10 +25,15 @@ Portfolio personal estático desarrollado como trabajo final de **Diseño UX/UI*
 
 ## ⚡ Performance y Lighthouse
 
-Se realizaron pruebas de rendimiento, accesibilidad y SEO utilizando PageSpeed Insights (Lighthouse) en modo Mobile y Desktop, obteniendo un puntaje de 100/100 en todas las métricas principales gracias a la optimización de imágenes a formato `.avif` y la ausencia de librerías pesadas.
+## ⚡ Performance y Lighthouse
 
-- Captura Mobile: `assets/lighthouse_mobile.avif`
-- Captura Desktop: `assets/lighthouse_desktop.avif`
+Se realizaron pruebas de rendimiento, accesibilidad y SEO utilizando PageSpeed Insights (Lighthouse) en modo Mobile y Desktop, obteniendo un puntaje de 100/100 en todas las métricas principales gracias a la optimización de imágenes y la ausencia de librerías pesadas.
+
+**Captura Mobile:**
+![Lighthouse Mobile](assets/lighthouse_mobile.png)
+
+**Captura Desktop:**
+![Lighthouse Desktop](assets/lighthouse_desktop.png)
 
 ## 📸 Comparación Figma vs. Sitio Desplegado
 
@@ -36,8 +41,8 @@ Fidelidad de implementación entre el diseño prototipado y el código final:
 
 | Sección | Figma (Prototipo) | Sitio Desplegado (HTML/CSS) |
 | :--- | :--- | :--- |
-| **Inicio** | `assets/inicio_proto.avif` | `assets/inicio_desplegado.avif` |
-| **Contacto** | `assets/contacto_proto.avif` | `assets/contacto_desplegado.avif` |
+| **Inicio** | ![Inicio Prototipo](assets/inicio_proto.png) | ![Inicio Desplegado](assets/inicio_desplegado.png) |
+| **Contacto** | ![Contacto Prototipo](assets/contacto_proto.png) | ![Contacto Desplegado](assets/contacto_desplegado.png) |
 
 ## 🤖 Uso de IA
 
@@ -49,6 +54,12 @@ Este proyecto fue desarrollado con asistencia de Inteligencia Artificial para:
 - Redacción y estructuración de la documentación.
 
 Todo el código generado fue revisado, testeado y ajustado manualmente por el alumno para asegurar que cumpla con los estándares de accesibilidad, responsive design y las consignas específicas del trabajo práctico.
+
+## 📄 Créditos
+
+- Tipografías: [Google Fonts](https://fonts.google.com/) (Encode Sans y Graduate).
+- Procesamiento de formulario: [Formspree](https://formspree.io/).
+- Imágenes optimizadas con [Squoosh](https://squoosh.app/).
 
 ## 📁 Estructura del Proyecto
 
@@ -67,8 +78,3 @@ Todo el código generado fue revisado, testeado y ajustado manualmente por el al
 ├── assets/                     # Imágenes optimizadas (.avif) y capturas
 └── README.md
 
-## 📄 Créditos
-
-- Tipografías: [Google Fonts](https://fonts.google.com/) (Encode Sans y Graduate).
-- Procesamiento de formulario: [Formspree](https://formspree.io/).
-- Imágenes optimizadas con [Squoosh](https://squoosh.app/).
